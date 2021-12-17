@@ -1,0 +1,171 @@
+@font-face {
+    font-family:"soleil";
+    src:url("https://use.typekit.net/af/5d2da8/00000000000000007735a1ac/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/5d2da8/00000000000000007735a1ac/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/5d2da8/00000000000000007735a1ac/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
+}
+
+header,
+footer {
+    min-height: 50px;
+}
+
+body {
+    font-family: "soleil", sans-serif;
+    background-color: #1E1E1E;
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+ 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.navigation {
+    font-size: 0.7rem;
+    margin-left: 10px;
+    display: flex;
+}
+
+.portfolio1 {
+    color: #CE9178;
+    padding-left: 10px;
+}
+
+.name {
+    color: white;
+    padding: 0px 10px; 
+}
+
+.p-tag {
+    color: #419ACF;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    color: white;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-left: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+.projectlink-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px; 
+}
+
+.logo-container {
+    
+    height: 150px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.logo-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.logo-link {
+    max-width: 150px;
+}
+
+.feedback-ca-section {
+    border-top: 2px solid white;
+    margin-top: 40px;
+}
+
+.feedback-ca-section p{
+    margin: 20px 20px
+}
+
+/* project specific pages */
+
+.link-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-box {
+    border: 1px solid white;
+    height: 50px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+}
+
+.link-box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link-box p {
+    margin: 0px; 
+    color: white; 
+}
+
+.christmas-container {
+    display: flex;
+}
+
+.christmas {
+    color: red;
+}
+
+.christmas-two {
+    color: rgb(27, 136, 27);
+}
+
+@media (min-width: 600px) {
+    .projectlink-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+        margin-top: 50px;
+    }
+
+    .navigation {
+        margin-left: 30px;
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+

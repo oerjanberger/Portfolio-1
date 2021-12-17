@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a portfolio page for the first year of Front End Development for Ørjan Grøttvedt Berger. On this page I will talk about the changes I made to cross course project">
+    <link rel="stylesheet" href="https://use.typekit.net/qlr3uhq.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio year 1 | Cross course project - Rainy Days</title>
+</head>
+
+<body>
+    <header>
+        <a href="Index.html">
+            <div class="navigation">
+                <p class="p-tag">&lt;p</p>
+                <p class="portfolio1">class="Portfolio1"</p>
+                <p class="p-tag">></p>
+                <p class="name">Ørjan Grøttvedt Berger</p>
+                <p class="p-tag">&lt;/p></p>
+            </div>
+        </a>
+    </header>
+    <main>
+        <a href="Index.html">
+            <p class="p-tag">&lt; Home</p>
+        </a>
+        <h1>Cross Course project: Rainy Days</h1>
+        <img src="images/RainyDays_Logo_white.png" class="logo-link">
+        <section class="link-container">
+            <a href="https://eloquent-hamilton-758e31.netlify.app/" class="link">
+                <div class="link-box">
+                    <p>Website</p>
+                </div>
+            </a>
+            <a href="https://github.com/oerjanberger/Rainydays.git" class="link">
+                <div class="link-box">
+                    <p>Github</p>
+                </div>
+            </a>
+        </section>
+        <h2>Changes I made:</h2>
+        <section class="feedback-ca-section">
+            <h3>General</h3>
+            <p>I did not like the look of the product containers, so I had to make some changes to them. I removed the
+                border and added a cta that lets the user know the product is clickable. I the added a slight hover
+                effect when the container is hovered by adding underline to the name and a green shadow to the cta</p>
+            <p>Small bug fixes that has been commented by teachers, such as not all pages have an h1 or its own title
+                and meta description. Images that where above 200px are now below that and I fixed the resolution on the
+                images that I could still was access on unpslashed.com, I had unfortunatley removed the originals from
+                my pc and the uploading photographer had removed them from the website.</p>
+            <p>Tried to make the CSS follow the DRY principle more then it did before. I have removed several css pages
+                that where duplicates. I would have liked to remove all the pages and start over again from scrath, the
+                same as with the html. This is because as we have progressed this year I just see so manny mistakes that
+                I have made previously. This also makes the code really hard to maintaine as I am struggling with what
+                classes styles which parts of the html. Sometimes I would change something and the next day find that
+                another page had been completly ruined, so then I had to fix that. It's a never ending circle.</p>
+            <p>I removed the searchbar from the header and moved it to the category specific pages. It made more sense
+                to have it there.</p>
+            <p>There is still alot to do on this page and every time I start working on it I am frustrated by how much
+                there is to do and how little time I have to do it</p>
+        </section>
+        <section class="feedback-ca-section">
+            <h3>Index page</h3>
+            <p>I started where I left of on the interaction design CA and finished the banner and made it responisve and
+                fit the screen size better. I then changed the text to stand out better on the image </p>
+            <p>I wanted the site to look more interesting so I added a featured product section where I get the products
+                with an api call and show the featured products. I made sure to only show three by adding per_page=3 to
+                the url</p>
+            <p>I had gotten feedback that the nav menu should be the same on all pages so I made that quick change and I
+                agree that it makes more sense.</p>
+        </section>
+        <section class="feedback-ca-section">
+            <h3>The product catergory pages</h3>
+            <p>I made the search function work so it looks for the products on the specific page if it contains the word
+                or letters in the searchbar. This will update as they write, I therefor had to have a min height on the
+                container for the products so the page did not jump from one size to the next every time a key was
+                typed. I had to also set the height and width for the searchbar for the same reason.</p>
+            <p>I also styled the searchbar a little different.</p>
+            <p>On the "All" category page I made the category filter for Unisex, Women and Men work. It will only show
+                the products from the last checkbox that was checked. I did not get around to fix that. </p>
+            <p>I did not get the price high, price low and so on, filter to work yet.</p>
+        </section>
+        <section class="feedback-ca-section">
+            <h3>Product specific page</h3>
+            <p>I made the hart clickable to show you could add a product to your favorites but I did not get around to
+                having it add the product to the favorites page</p>
+            <p>The same goes for add to cart and add to wishlist. I made a pop up modal that shows for 1.5seconds that
+                says the product is added, but did not have time to actually make the function that added the product
+            </p>
+            <p>I made a function that checks if the product is in stock or out of stock and shows that on the page by
+                changing the text and symbol from green to red</p>
+            <p>I added an image modal to the main image on the product page. I would have liked it so the images could
+                be scrolled in the modal and so the image that is clicked in the carousel is the one that is shown, but
+                there was not enough time.</p>
+        </section>
+    </main>
+    <footer>
+        <a href="Index.html">
+            <div class="navigation">
+                <p class="p-tag">&lt;p</p>
+                <p class="portfolio1">class="Portfolio1"</p>
+                <p class="p-tag">></p>
+                <p class="name">Ørjan Grøttvedt Berger</p>
+                <p class="p-tag">&lt;/p></p>
+            </div>
+        </a>
+    </footer>
+</body>
+
+</html>
